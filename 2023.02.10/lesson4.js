@@ -106,6 +106,8 @@
 
 // №5
 
+// Недоработанный вариант
+
 // let arr = [];
 // function letter(str, l){
 //     if (arr[0] == ''){
@@ -120,21 +122,21 @@
 // }
 // console.log(letter('абракадабра', 'a'));
 
-function letterFunc(str, letter){
-    let count = 0;
-    if (str.length == 0){
-        return 0;
-    }
-    else if (str != letter) {
-        if  (str.substring(str.length - 1) == letter){
-            count++;
-            str2 = str.substring(-1, 3);
-            letterFunc(str2, letter);
-        }
-        return count;
-    }
-}
-console.log(letterFunc('каша', 'a'));
+// function letterFunc(str, letter){
+//     let count = 0;
+//     if (str.length == 0){
+//         return 0;
+//     }
+//     else if (str != letter) {
+//         if  (str.substring(str.length - 1) == letter){
+//             count++;
+//             str2 = str.substring(-1, 3);
+//             letterFunc(str2, letter);
+//         }
+//         return count;
+//     }
+// }
+// console.log(letterFunc('каша', 'a'));
 
 // let str = 'каша';
 // console.log(str.substring(3));
