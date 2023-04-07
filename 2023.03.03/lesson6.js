@@ -2,18 +2,18 @@
 // (Пример: цуфы вав ыфуц - True, qazxsw - Fаlse)
 
 
-function isPalindrom(word, reverseWord){
-    if (word == reverseWord){
+function isPalindrom(word){
+    if ((word.length == 0) | (word.length == 1)){
        return 'True';
-    } else {
-        // for (let i = word.length - 1; i >= 0; i--){
-        //     reverseWord += word[i];
-        // }
-        isPalindrom(reverseWord += word[word.length - 1]);
+    } else if (word.substring(0,1) == word.substring(word.length-1)) {
+        return isPalindrom(word.slice(1).slice(0,-1));
     }
-    return 'False';
+    else {
+        return 'False';
+    }
 }
 
-let word = 'потоп';
-let reverseWord = '';
-console.log(isPalindrom(word, reverseWord));
+let word = 'цуфы вав ыфуц';
+console.log(isPalindrom(word));
+let word2 = 'qazxsw';
+console.log(isPalindrom(word2));
