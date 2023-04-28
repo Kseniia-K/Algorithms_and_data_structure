@@ -1,29 +1,44 @@
-class Stack {
-    constructor(){
-        this.stack=[];
-    }
-    push(item) {
-        this.stack.push(item);
-    }
-    pop() {
-        this.stack.pop();
-    }
-    reverse() {
-        for (let i = this.stack.length - 1; i >= 0; i--) {
-            console.log(this.stack[i]);
-        }
-    }
-    show() {
-        console.log(this.stack)
-    }
-}
-let Stack1 = new Stack();
+// class Stack {
+//     constructor(){
+//         this.stack = [];
+//     }
+//     push(item){
+//         return this.stack.push(item);
+//     }
+//     pop(){
+//         return this.stack.pop();
+//     }
+//     peek(){
+//         return this.stack[this.stack.length - 1];
+//     }
+//     isEmpty(){
+//         if (this.stack.length == 0) {
+//             return true;
+//         }
+//         else {
+//             return false;
+//         }
+//     }
+//     size(){
+//         return this.stack.length;
+//     }
+//     reverse(){
+//         return this.stack.reverse();
+//     }
+//     show(){
+//         return this.stack;
+//     }
+// }
 
-Stack1.push("G");
-Stack1.push("o");
-Stack1.push("o");
-Stack1.push("d");
-Stack1.show();
-Stack1.reverse();
-Stack1.pop();
-Stack1.show();
+// let stack = new Stack();
+// console.log(stack.isEmpty());
+// stack.push("O");
+// stack.push("n");
+// stack.push("e");
+// console.log(stack.show());
+// stack.pop();
+// console.log(stack.isEmpty());
+// console.log(stack.size());
+// console.log(stack.peek());
+// console.log(stack.show());
+// console.log(stack.reverse());
